@@ -92,7 +92,7 @@ function AdminShopsContent() {
     // If it's a full URL (like from unspalsh), return it
     if (url.startsWith('http')) return url;
     // Otherwise prepend the backend URL for static files
-    const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+    const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://food-delivery-system-backend-eight.vercel.app/api';
     const baseUrl = API_URL.replace('/api', '');
     return `${baseUrl}${url}`;
   };

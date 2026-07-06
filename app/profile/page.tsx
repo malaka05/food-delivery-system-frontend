@@ -83,7 +83,7 @@ function ProfileContent() {
     if (avatar.startsWith('http')) return avatar;
     const baseUrl = process.env.NEXT_PUBLIC_API_URL
       ? process.env.NEXT_PUBLIC_API_URL.replace('/api', '')
-      : 'http://localhost:5000';
+      : 'https://food-delivery-system-backend-eight.vercel.app';
     return `${baseUrl}${avatar}`;
   };
 

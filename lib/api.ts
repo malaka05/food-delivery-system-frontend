@@ -1,6 +1,6 @@
 import { User, Shop, Food, Order, OrderStatus } from '@/types';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://food-delivery-system-backend-eight.vercel.app/api';
 
 const getToken = () => {
   if (typeof window !== 'undefined') {
